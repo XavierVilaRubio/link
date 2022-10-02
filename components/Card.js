@@ -3,9 +3,9 @@ export default function Card({ path, title, subtitle, link, background }) {
     <a href={link} target="_blank" rel="noreferrer">
       <div
         style={{ background: background }}
-        className="flex justify-center items-center md:h-32 lg:h-48 h-20 w-full  rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 object-cover"
+        className="flex items-center justify-center object-cover w-full h-20 border border-gray-200 rounded-lg shadow-md md:h-32 lg:h-48 dark:bg-gray-800 dark:border-gray-700"
       >
-        <div className="md:h-10 md:w-10 h-6 w-6">
+        <div className="w-6 h-6 md:h-10 md:w-10">
           <svg
             role="img"
             viewBox="0 0 24 24"
