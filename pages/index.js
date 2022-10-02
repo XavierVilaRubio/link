@@ -22,7 +22,8 @@ export default function Home() {
         <button
           role="button"
           onClick={() => setTheme("light")}
-          className="m-2 p-1 rounded-md hover:ring-2 hover:ring-gray-300"
+          className="p-1 m-2 rounded-md hover:ring-2 hover:ring-gray-300"
+          aria-label="Switch to light mode"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +40,8 @@ export default function Home() {
         <button
           role="button"
           onClick={() => setTheme("dark")}
-          className="m-2 p-1 rounded-md hover:ring-2 hover:ring-gray-300"
+          className="p-1 m-2 rounded-md hover:ring-2 hover:ring-gray-300"
+          aria-label="Switch to dark mode"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -64,11 +66,11 @@ export default function Home() {
         <title>Xavier Vila&rsquo;s Links</title>
       </Head>
       <div className="p-4 md:p-10">
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-row items-center justify-between">
           <h1 className="text-3xl font-bold">Xavier Vila Rubio</h1>
           {renderThemeChanger()}
         </div>
-        <div className="mt-8 grid lg:grid-cols-3 grid-cols-2 gap-5">
+        <div className="grid grid-cols-2 gap-5 mt-8 lg:grid-cols-3">
           <Card
             title="Website"
             subtitle="xavivila.dev"
