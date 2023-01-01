@@ -67,7 +67,9 @@ export default function Home() {
       </Head>
       <div className="p-4 md:p-10">
         <div className="flex flex-row items-center justify-between">
-          <h1 className="text-3xl font-bold">Xavier Vila Rubio</h1>
+          <h1 className="text-3xl font-bold text-textLight dark:text-textDark">
+            Xavier Vila Rubio
+          </h1>
           {renderThemeChanger()}
         </div>
         <div className="grid grid-cols-2 gap-5 mt-8 lg:grid-cols-3">
